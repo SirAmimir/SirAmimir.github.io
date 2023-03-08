@@ -1,0 +1,237 @@
+
+
+.jumbotron {
+    background:url("../assets/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron > .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+.jumbotron::after {
+    content: "";
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.swiper > .swiper-wrapper {
+    height: 74vh;
+    width: 100%;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.swiper > .swiper-wrapper > .slide1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide .lead{
+    font-size: 25px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    letter-spacing: 5px;
+    color: crimson;
+    line-height: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p.lead::first-letter {
+    font-size: 50px;
+}
+
+.lead1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.lead2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 0;
+}
+.quotes {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 0;
+}
+
+.Lead {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: rgb(28, 109, 190);
+    text-shadow: 2px 2px 2px black;
+}
+
+.Lead1 {
+    font-size: 10px;
+    text-align: justify;
+    text-shadow: 2px 2px black;
+}
+
+.footer {
+    color: white;
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > .items {
+    color: white;
+    font-size: x-large;
+}
+
+.footer > .facebook {
+    margin-left: 20px;
+}
+
+@media (min-width: 992px) { 
+    .navbar {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar-brand {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        font-size: x-large;
+        font-weight: 700;
+    }
+    
+    .nav-link {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .nav-link:hover {
+        color: grey;
+    }
+
+    .navbar-brand:hover {
+        color: white;
+    }
+
+    .nav-link::after {
+        content:"";
+        display: block;
+        border-bottom: 5px solid transparent;
+        width: 20px;
+        margin: auto;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 5px solid crimson;
+        width: 20px;
+        margin: auto;
+    }
+
+    .jumbotron {
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url("../assets/background.jpg");
+        background-size: cover;
+        height: 100vh;
+        margin-top: -77px;
+        text-align: center;
+        color: white;
+    }
+
+    .swiper > .swiper-wrapper {
+        height: 74vh;
+        width: 100%;
+    }
+
+    .swiper > .swiper-wrapper > .swiper-slide {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .swiper > .swiper-wrapper > .slide1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+    
+    .swiper > .swiper-wrapper > .swiper-slide .lead{
+        font-size: 50px;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-shadow: 2px 2px black;
+        letter-spacing: 5px;
+        color: crimson;
+        line-height: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p.lead::first-letter {
+        font-size: 100px;
+    }
+    
+    .lead1 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 5;
+    }
+    
+    .lead2 {
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 0;
+    }
+    .quotes {
+        text-transform: capitalize;
+        font-style: italic;
+        font-weight: lighter;
+        line-height: normal;
+    }
+
+    .slide2 > div {
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .Lead {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        color: rgb(28, 109, 190);
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .Lead1 {
+        font-size: 15px;
+        text-align: justify;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+ }
